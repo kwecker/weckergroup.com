@@ -1,4 +1,7 @@
-body { background: #000; }
+body {
+	font: 16px/1.5em "PT Sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	background: #000;
+}
 
 a {
 	color: #c00;
@@ -7,7 +10,10 @@ a {
 }
 
 p {
-	&.loud { font-size: 1.25em;}
+	&.loud {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
 }
 
 hr {
@@ -47,7 +53,7 @@ hr {
 		position: fixed;
 		top: 0;
 		right: 0;
-		padding: 1.1em 1.1em 0 0;
+		padding: 0.6em 0.6em 0 0;
 		font-size: 1.1em;
 		z-index: 8000;
 		width: 100%;
@@ -72,6 +78,10 @@ hr {
 			padding: 0.75em 1.25em;
 			display: block;
 			border-radius: 5px;
+
+			&.active {
+				color: #999;
+			}
 
 			&:hover {
 				background: #c00;

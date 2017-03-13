@@ -5,6 +5,7 @@
 	<title>The Wecker Group | Monterey County Advertising and Graphic Design</title>
 
 	<!-- build:css /css/main.min.css -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="/css/normalize.css" />
 	<link rel="stylesheet" href="/css/skeleton.css" />
 	<link rel="stylesheet" href="/css/main.css" />
@@ -15,9 +16,9 @@
 		<header class="main-header">
 			<nav class="main-navigation group container--long">
 				<ul class="menu">
-					<li class="menu__item"><a href="/" class="menu__link">Home</a></li><!--
-				 --><li class="menu__item"><a href="/our-work/" class="menu__link">Our Work</a></li><!--
-				 --><li class="menu__item"><a href="/about/" class="menu__link">About Us</a></li>
+					<li class="menu__item"><a href="/" class="menu__link<?=($section=="Home") ? ' active' : ''?>">Home</a></li><!--
+				 --><li class="menu__item"><a href="/our-work/" class="menu__link<?=($section=="Our Work") ? ' active' : ''?>">Our Work</a></li><!--
+				 --><li class="menu__item"><a href="/about/" class="menu__link<?=($section=="About Us") ? ' active' : ''?>">About Us</a></li>
 				</ul>
 			</nav>
 			<div class="container">
@@ -33,3 +34,4 @@
 				</div>
 			</section>
 		</header>
+
