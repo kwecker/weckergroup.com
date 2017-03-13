@@ -106,6 +106,20 @@ hr {
     visibility: visible;
     opacity: 1; }
 
+.testimonial__quote {
+  margin: 0; }
+
+.testimonial__author {
+  text-align: right; }
+  .testimonial__author .title {
+    display: block;
+    font-style: oblique;
+    line-height: 1.35em; }
+
+.testimonial__image {
+  float: left;
+  margin-right: 1em; }
+
 .main-footer {
   color: #fff;
   text-align: center; }

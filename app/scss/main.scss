@@ -1,6 +1,4 @@
-body {
-	background: #000;
-}
+body { background: #000; }
 
 a {
 	color: #c00;
@@ -140,6 +138,24 @@ hr {
 			visibility: visible;
 			opacity: 1;
 		}
+	}
+}
+
+.testimonial{
+	&__quote { margin: 0; }
+	&__author{
+		text-align: right;
+
+		.title {
+			display: block;
+			font-style: oblique;
+			line-height: 1.35em;
+		}
+	}
+
+	&__image {
+		float: left;
+		margin-right: 1em;
 	}
 }
 

@@ -11,9 +11,9 @@
 				</p>
 			</section>
 
-			<hr>
+			<!-- <hr> -->
 
-			<section id="home-gallery" class="container">
+			<!-- <section id="home-gallery" class="container">
 				<div class="boxes">
 					<div class="row">
 						<div class="box four columns">
@@ -76,15 +76,23 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<hr>
 
 			<section id="home-testimonials" class="container">
-				<div class="testimonial">
-					<img src="" alt="" class="headshot">
-					<blockquote class="quote">
-						<p></p>
+				<div class="testimonial group">
+					<img src=/images/testimonials/face.png alt="Blank Face" width="100" height="100" class="testimonial__image" />
+					<blockquote class="testimonial__quote">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic consequatur repudiandae amet nemo illum incidunt reprehenderit ducimus mollitia, harum iusto eum. Sapiente assumenda, iusto. Distinctio sequi impedit, cumque iure.</p>
+						<p class="testimonial__author">Kevin Wecker, <span class="title">The Wecker Group</span></p>
+					</blockquote>
+				</div>
+				<div class="testimonial group">
+					<img src=/images/testimonials/face.png alt="Blank Face" width="100" height="100" class="testimonial__image" />
+					<blockquote class="testimonial__quote">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic consequatur repudiandae amet nemo illum incidunt reprehenderit ducimus mollitia, harum iusto eum. Sapiente assumenda, iusto. Distinctio sequi impedit, cumque iure.</p>
+						<p class="testimonial__author">Kevin Wecker, <span class="title">The Wecker Group</span></p>
 					</blockquote>
 				</div>
 			</section>
