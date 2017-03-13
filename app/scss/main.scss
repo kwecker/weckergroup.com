@@ -1,0 +1,164 @@
+body {
+	background: #000;
+}
+
+a {
+	color: #c00;
+
+	&:hover { color: #300;}
+}
+
+p {
+	&.loud { font-size: 1.25em;}
+}
+
+hr {
+	border-color: #fcc;
+	margin: 2em 0;
+}
+
+.container--long {
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+.main-header {
+	width: 100%;
+
+	a { text-decoration: none; }
+
+	.logo {
+		position: relative;
+		display: inline-block;
+		margin: 2em 0;
+
+		&__mark {
+			width: 200px;
+			height: auto;
+		}
+		&__logotype {
+			width: 350px;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+	}
+
+	.menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 1.1em 1.1em 0 0;
+		font-size: 1.1em;
+		z-index: 8000;
+		width: 100%;
+		text-align: right;
+		background: none;
+
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&__item {
+			list-style-type: none;
+			display: inline-block;
+		}
+
+		&__link {
+			color: #c00;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 0.75em 1.25em;
+			display: block;
+			border-radius: 5px;
+
+			&:hover {
+				background: #c00;
+				color: #fff;
+			}
+		}
+
+		&.fixed {
+			background: #000;
+		}
+	}
+
+	.contact-information {
+		background: #c00;
+		color: #fff;
+		text-align: center;
+		line-height: 1em;
+		font-size: 1.5em;
+		font-weight: 300;
+		padding-bottom: 0.5em;
+
+		a {
+			color: #fff;
+
+			&:hover { color: #fc0;}
+		}
+
+		span {
+			display: inline-block;
+			margin: 0.5em 2em 0;
+		}
+	}
+}
+
+.main-content {
+	padding: 2em 0;
+	background: antiquewhite;
+}
+
+.box {
+	height: 100px;
+	margin-bottom: 4%;
+	position: relative;
+
+	background: #000;
+
+	span {
+		background: #c00;
+		color: #fff;
+		text-decoration: none;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 0.25em 1em;
+		display: block;
+		-webkit-transition: 0.3s all ease;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	&:hover {
+		span {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.main-footer {
+	color: #fff;
+	text-align: center;
+
+	a { color: #fff; }
+
+	.copyright {
+		color: #666;
+		margin: 2em 0;
+	}
+}
+
+
+// Clearfix
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}

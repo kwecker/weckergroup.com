@@ -1,0 +1,121 @@
+body {
+  background: #000; }
+
+a {
+  color: #c00; }
+  a:hover {
+    color: #300; }
+
+p.loud {
+  font-size: 1.25em; }
+
+hr {
+  border-color: #fcc;
+  margin: 2em 0; }
+
+.container--long {
+  max-width: 2000px;
+  margin: 0 auto; }
+
+.main-header {
+  width: 100%; }
+  .main-header a {
+    text-decoration: none; }
+  .main-header .logo {
+    position: relative;
+    display: inline-block;
+    margin: 2em 0; }
+    .main-header .logo__mark {
+      width: 200px;
+      height: auto; }
+    .main-header .logo__logotype {
+      width: 350px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%; }
+  .main-header .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.1em 1.1em 0 0;
+    font-size: 1.1em;
+    z-index: 8000;
+    width: 100%;
+    text-align: right;
+    background: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .main-header .menu__item {
+      list-style-type: none;
+      display: inline-block; }
+    .main-header .menu__link {
+      color: #c00;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.75em 1.25em;
+      display: block;
+      border-radius: 5px; }
+      .main-header .menu__link:hover {
+        background: #c00;
+        color: #fff; }
+    .main-header .menu.fixed {
+      background: #000; }
+  .main-header .contact-information {
+    background: #c00;
+    color: #fff;
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-bottom: 0.5em; }
+    .main-header .contact-information a {
+      color: #fff; }
+      .main-header .contact-information a:hover {
+        color: #fc0; }
+    .main-header .contact-information span {
+      display: inline-block;
+      margin: 0.5em 2em 0; }
+
+.main-content {
+  padding: 2em 0;
+  background: antiquewhite; }
+
+.box {
+  height: 100px;
+  margin-bottom: 4%;
+  position: relative;
+  background: #000; }
+  .box span {
+    background: #c00;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0.25em 1em;
+    display: block;
+    -webkit-transition: 0.3s all ease;
+    visibility: hidden;
+    opacity: 0; }
+  .box:hover span {
+    visibility: visible;
+    opacity: 1; }
+
+.main-footer {
+  color: #fff;
+  text-align: center; }
+  .main-footer a {
+    color: #fff; }
+  .main-footer .copyright {
+    color: #666;
+    margin: 2em 0; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
