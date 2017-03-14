@@ -13,12 +13,13 @@ p {
 	&.loud {
 		font-size: 1.5em;
 		line-height: 1.5em;
+		margin: 0.5em 0;
 	}
 }
 
 hr {
 	border-color: #fcc;
-	margin: 2em 0;
+	margin: 3em 0;
 }
 
 .container--long {
