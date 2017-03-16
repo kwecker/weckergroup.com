@@ -17,7 +17,7 @@
 			<nav class="main-navigation group container--long">
 				<ul class="menu">
 					<li class="menu__item"><a href="/" class="menu__link<?=($section=="Home") ? ' active' : ''?>">Home</a></li><!--
-				 --><li class="menu__item"><a href="/our-work/" class="menu__link<?=($section=="Our Work") ? ' active' : ''?>">Our Work</a></li><!--
+				 --><li class="menu__item"><a href="/work/" class="menu__link<?=($section=="Our Work") ? ' active' : ''?>">Our Work</a></li><!--
 				 --><li class="menu__item"><a href="/about/" class="menu__link<?=($section=="About Us") ? ' active' : ''?>">About Us</a></li>
 				</ul>
 			</nav>

@@ -1,10 +1,14 @@
+$main-color: #c00;
+$accent-color: #fc0;
+
 body {
 	font: 16px/1.5em "PT Sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	background: #000;
+	color: #333;
 }
 
 a {
-	color: #c00;
+	color: $main-color;
 
 	&:hover { color: #300;}
 }
@@ -72,7 +76,7 @@ hr {
 		}
 
 		&__link {
-			color: #c00;
+			color: $main-color;
 			font-weight: bold;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -81,11 +85,11 @@ hr {
 			border-radius: 5px;
 
 			&.active {
-				color: #999;
+				color: #666;
 			}
 
 			&:hover {
-				background: #c00;
+				background: $main-color;
 				color: #fff;
 			}
 		}
@@ -96,7 +100,7 @@ hr {
 	}
 
 	.contact-information {
-		background: #c00;
+		background: $main-color;
 		color: #fff;
 		text-align: center;
 		line-height: 1em;
@@ -107,7 +111,7 @@ hr {
 		a {
 			color: #fff;
 
-			&:hover { color: #fc0;}
+			&:hover { color: $accent-color; }
 		}
 
 		span {
@@ -120,6 +124,8 @@ hr {
 .main-content {
 	padding: 2em 0;
 	background: antiquewhite;
+
+	h1, h2 { color: $main-color; }
 }
 
 .box {
@@ -130,7 +136,7 @@ hr {
 	background: #000;
 
 	span {
-		background: #c00;
+		background: $main-color;
 		color: #fff;
 		text-decoration: none;
 		position: absolute;

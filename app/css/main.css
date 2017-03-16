@@ -1,6 +1,7 @@
 body {
   font: 16px/1.5em "PT Sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-  background: #000; }
+  background: #000;
+  color: #333; }
 
 a {
   color: #c00; }
@@ -63,7 +64,7 @@ hr {
       display: block;
       border-radius: 5px; }
       .main-header .menu__link.active {
-        color: #999; }
+        color: #666; }
       .main-header .menu__link:hover {
         background: #c00;
         color: #fff; }
@@ -88,6 +89,8 @@ hr {
 .main-content {
   padding: 2em 0;
   background: antiquewhite; }
+  .main-content h1, .main-content h2 {
+    color: #c00; }
 
 .box {
   height: 100px;
