@@ -158,6 +158,23 @@ hr {
 	}
 }
 
+.team__member {
+	margin-bottom: 2em;
+
+	img {
+		width: 125px;
+		height: 175px;
+		border: 1px solid #999;
+		float: right;
+		margin: 0.15em 1em 0.25em 0;
+	}
+
+	h3 {
+		font-size: 1.35em;
+		margin-bottom: 0.35em;
+	}
+}
+
 .testimonial{
 	&__quote { margin: 0; }
 	&__author{

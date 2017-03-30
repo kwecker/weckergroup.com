@@ -114,6 +114,18 @@ hr {
     visibility: visible;
     opacity: 1; }
 
+.team__member {
+  margin-bottom: 2em; }
+  .team__member img {
+    width: 125px;
+    height: 175px;
+    border: 1px solid #999;
+    float: right;
+    margin: 0.15em 1em 0.25em 0; }
+  .team__member h3 {
+    font-size: 1.35em;
+    margin-bottom: 0.35em; }
+
 .testimonial__quote {
   margin: 0; }
 
