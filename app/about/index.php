@@ -15,7 +15,7 @@
 				<h2>The Team</h2>
 				<div class="row">
 					<div class="six columns team__member group">
-						<img src="" alt="">
+						<img src="" alt="Robert Wecker">
 						<h3>Robert Wecker</h3>
 						<div>
 							<p>
@@ -24,7 +24,7 @@
 						</div>
 					</div>
 					<div class="six columns team__member group">
-						<img src="" alt="">
+						<img src="" alt="Sue Frerkson-Wecker">
 						<h3>Sue Frerkson-Wecker</h3>
 						<div>
 							<p>
@@ -35,7 +35,7 @@
 				</div>
 				<div class="row">
 					<div class="six columns team__member group">
-						<img src="" alt="">
+						<img src="" alt="Ruth Minerva">
 						<h3>Ruth Minerva</h3>
 						<div>
 							<p>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div class="six columns team__member group">
-						<img src="" alt="">
+						<img src="" alt="Matt Gnibus">
 						<h3>Matt Gnibus</h3>
 						<div>
 							<p>
@@ -55,7 +55,7 @@
 				</div>
 				<div class="row">
 					<div class="six columns team__member group">
-						<img src="" alt="">
+						<img src="" alt="Kevin Wecker">
 						<h3>Kevin Wecker</h3>
 						<div>
 							<p>
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 					<div class="six columns team__member group">
-						<img src="" alt="">
+						<img src="" alt="Lin Sponsler">
 						<h3>Lin Sponsler</h3>
 						<div>
 							<p>
@@ -73,6 +73,12 @@
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<hr>
+
+			<section id="history" class="container">
+				<h2>History</h2>
 			</section>
 
 		</section>
