@@ -1,3 +1,21 @@
+<?php
+	$menuItems = [
+		'Home' => '/',
+		'Our Work' => '/work/',
+		'About Us' => '/about/'
+	];
+
+
+	function makeMenu($items, $active) {
+		$output = '<ul class="menu">';
+		foreach($items as $name => $slug) {
+			$output .= '<li class="menu__item"><a href="' . $slug . '" class="menu__link'. (($active == $name) ? ' active' : '') . '">' . $name . "</a></li>";
+		}
+		$output .= '</ul>';
+
+		return $output;
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +33,7 @@
 	<div class="wrapper">
 		<header class="main-header">
 			<nav class="main-navigation group container--long">
-				<ul class="menu">
-					<li class="menu__item"><a href="/" class="menu__link<?=($section=="Home") ? ' active' : ''?>">Home</a></li><!--
-				 --><li class="menu__item"><a href="/work/" class="menu__link<?=($section=="Our Work") ? ' active' : ''?>">Our Work</a></li><!--
-				 --><li class="menu__item"><a href="/about/" class="menu__link<?=($section=="About Us") ? ' active' : ''?>">About Us</a></li>
-				</ul>
+				<?=makeMenu($menuItems, $section)?>
 			</nav>
 			<div class="container">
 				<a href="/" class="logo">
