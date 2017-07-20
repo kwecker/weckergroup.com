@@ -2,3 +2,5 @@ node_modules/
 app/css
 gulpfile.js
 package.json
+app/images
+favicon.ico
