@@ -10,6 +10,7 @@
 
 	<!-- build:css /js/app.min.js -->
 	<script src="/js/jquery.min.js"></script>
+	<script src="/js/jquery.waypoints.min.js"></script>
 	<script src="/js/app.js"></script>
 	<!-- endbuild -->
 

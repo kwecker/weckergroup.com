@@ -2,33 +2,111 @@
 <?php require_once('common/header.php'); ?>
 
 		<section class="main-content">
+			<!-- Intro -->
 			<section id="intro" class="container">
-				<p class="loud">
-					<strong>The Wecker Group</strong> is an independent design studio/ad agency established in 1974. We specialize in corporate identity, collateral, print and TV advertising, web design, packaging and event promotion. As one of the area&#8217;s most recognized agencies and winner of numerous local and national awards, The Wecker Group is proud of its consistently high standards and memorable results.
-				</p>
-			</section> <!-- /intro -->
+				<div class="liner">
+					<header>
+						<h1>Design for the future, right now.</h1>
+					</header>
+					<p class="loud">
+						Let us seamlessly coordinate your visual identity with your cross-channel marketing program. From concept through execution, we help your brand stand out with proven experience in all facets of creative development and project management.
+					</p>
+				</div>
+			</section>
+			<!-- End Intro -->
+
+
+			<!-- Slider -->
+			<section class="slider" id="splash">
+
+			</section>
+			<!-- End Slider -->
+
+
+			<!-- Our Work -->
+			<section class="container" id="work">
+				<div class="liner">
+					<header>
+						<h1>Our Work</h1>
+					</header>
+
+					<section class="picture-nav">
+						<div class="picture-box">
+							<img src="" alt="">
+							<h2></h2>
+							<a href="#">See more</a>
+						</div>
+					</section>
+
+				</div>
+			</section>
+			<!-- End Our Work -->
+
 
 			<hr>
 
-			<section id="home-testimonials" class="container">
 
-				<div class="testimonial group">
-					<img src=/images/testimonials/face.png alt="Blank Face" width="100" height="100" class="testimonial__image" />
-					<blockquote class="testimonial__quote">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic consequatur repudiandae amet nemo illum incidunt reprehenderit ducimus mollitia, harum iusto eum. Sapiente assumenda, iusto. Distinctio sequi impedit, cumque iure.</p>
-						<p class="testimonial__author">Kevin Wecker, <span class="title">The Wecker Group</span></p>
-					</blockquote>
-				</div> <!-- /testimonial -->
+			<!-- About Us -->
+			<section class="container" id="about">
+				<div class="liner">
+					<header>
+						<h1>About Us</h1>
+						<span class="subheader">Since 1974, we’ve made a mark on our community.</span>
+					</header>
+					<p>
+						The Wecker Group is an award-winning, independent design studio and advertising agency established in 1974 by Robert J. Wecker. Since then, we have seamlessly applied thousands of visual identities into each of our client’s marketing programs. We define the unique benefits, attributes and characteristics of a company, then translate them into compelling, long-lasting identity packages. Our goal has always been to design with the future in mind.
+					</p>
 
-				<div class="testimonial group">
-					<img src=/images/testimonials/face.png alt="Blank Face" width="100" height="100" class="testimonial__image" />
-					<blockquote class="testimonial__quote">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa hic consequatur repudiandae amet nemo illum incidunt reprehenderit ducimus mollitia, harum iusto eum. Sapiente assumenda, iusto. Distinctio sequi impedit, cumque iure.</p>
-						<p class="testimonial__author">Kevin Wecker, <span class="title">The Wecker Group</span></p>
-					</blockquote>
-				</div> <!-- /testimonial -->
+					<section class="subsection team" id="team">
+						<header>
+							<h2>The Team</h2>
+						</header>
 
-			</section> <!-- /home-testimonials -->
+						<div class="team__member group">
+							<img src="" alt="Robert Wecker">
+							<h3>Robert Wecker</h3>
+							<h4>Owner / Lead Designer</h4>
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, dolorum explicabo dicta aspernatur, commodi odit ex aperiam ea sit rem inventore modi temporibus sapiente, eligendi nobis iure deleniti debitis sed?
+								</p>
+							</div>
+						</div><!--
+					--><div class="team__member group">
+							<img src="" alt="Matt Gnibus">
+							<h3>Matt Gnibus</h3>
+							<h4>Senior Designer</h4>
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quis, itaque expedita deleniti vitae voluptate tempora voluptates, aspernatur quaerat culpa dolor incidunt magni. Nesciunt itaque, dolor doloremque quibusdam sint eos!
+								</p>
+							</div>
+						</div><!--
+					--><div class="team__member group">
+							<img src="" alt="Kevin Wecker">
+							<h3>Kevin Wecker</h3>
+							<h4>Web Designer / Webmaster</h4>
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolorem cumque veniam quos saepe temporibus. Similique, in! Esse laboriosam necessitatibus, eveniet, temporibus eum porro aperiam illo suscipit, cupiditate voluptatem quae.
+								</p>
+							</div>
+						</div><!--
+					--><div class="team__member group">
+							<img src="" alt="Sue Frerkson-Wecker">
+							<h3>Sue Frerkson-Wecker</h3>
+							<h4>Office Manager</h4>
+							<div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio unde alias, eaque quaerat. Enim hic, molestias aliquid maxime, iusto sequi quae explicabo eum, corrupti officiis dolorum labore esse ex adipisci!
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End About Us -->
+
+			</section>
 		</section>
 
 <?php require_once('common/footer.php'); ?>

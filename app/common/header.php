@@ -1,21 +1,3 @@
-<?php
-	$menuItems = [
-		'Home' => '/',
-		'Our Work' => '/work/',
-		'About Us' => '/about/'
-	];
-
-
-	function makeMenu($items, $active) {
-		$output = '<ul class="menu">';
-		foreach($items as $name => $slug) {
-			$output .= '<li class="menu__item"><a href="' . $slug . '" class="menu__link'. (($active == $name) ? ' active' : '') . '">' . $name . "</a></li>";
-		}
-		$output .= '</ul>';
-
-		return $output;
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,16 +7,22 @@
 	<!-- build:css /css/main.min.css -->
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="/css/normalize.css" />
-	<link rel="stylesheet" href="/css/skeleton.css" />
 	<link rel="stylesheet" href="/css/main.css" />
 	<!-- endbuild -->
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="home">
+
 		<header class="main-header">
-			<nav class="main-navigation group container--long">
-				<?=makeMenu($menuItems, $section)?>
-			</nav>
+
+			<!-- Contact Info Bar -->
+			<section class="contact-information-bar">
+				<div class="container">
+					<span class="phone">831-372-8377</span><span class="email"><a href="mailto:wecker@weckergroup.com">wecker@weckergroup.com</a></span>
+				</div>
+			</section>
+
+			<!-- Logo -->
 			<div class="container">
 				<a href="/" class="logo">
 					<img src="/images/logo.svg" alt="W" class="logo__mark">
@@ -42,10 +30,13 @@
 				</a>
 			</div>
 
-			<section class="contact-information">
-				<div class="container">
-					<span class="phone">831-372-8377</span><span class="email"><a href="mailto:wecker@weckergroup.com">wecker@weckergroup.com</a></span>
-				</div>
-			</section>
-		</header>
+			<!-- Main Navigation -->
+			<nav class="main-navigation group container">
+				<ul class="menu">
+					<li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+					<li class="menu__item"><a href="#work" class="menu__link">Our Work</a></li>
+					<li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+				</ul>
+			</nav>
 
+		</header>
