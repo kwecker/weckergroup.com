@@ -2,6 +2,8 @@ $main-color: #c00;
 $font-color: #333;
 $accent-color: #fc0;
 
+
+// Base Styles
 body {
 	font: 16px/1.5em "PT Sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 	background: #000;
@@ -30,6 +32,8 @@ hr {
 	margin: 3em 0;
 }
 
+
+// Wrappers
 .container {
 	width: 100%;
 	max-width: 1020px;
@@ -42,6 +46,8 @@ hr {
 	padding: 0 2em;
 }
 
+
+// Header
 .main-header {
 	width: 100%;
 	height: 15em;
@@ -87,6 +93,14 @@ hr {
 			bottom: auto;
 			width: 100%;
 			max-width: 100%;
+
+			.menu {
+				background-image: url("../images/logotype.svg");
+				background-repeat: no-repeat;
+				background-size: auto 80%;
+				background-position: left 1em center;
+				transition: background-image 0.1s ease-in-out;
+			}
 		}
 	}
 
@@ -145,6 +159,8 @@ hr {
 	}
 }
 
+
+// Content Area
 .main-content {
 	padding: 2em 0;
 	background: #fff url("../images/paper_fibers_@2X.png");
@@ -162,6 +178,7 @@ hr {
 	}
 }
 
+// Slider
 .slider {
 	width: 100%;
 	height: 35em;
@@ -169,33 +186,51 @@ hr {
 	background: #ccc;
 }
 
-.box {
-	height: 100px;
-	margin-bottom: 4%;
+.picture-nav {
+	width: 100%;
+}
+
+.picture-box {
+	width: 47%;
+	margin-right: 6%;
+	margin-top: 2em;
+	display: inline-block;
+	vertical-align: top;
 	position: relative;
 
-	background: #000;
+	&:nth-child(2n) { margin-right: 0; }
 
-	span {
-		background: $main-color;
-		color: #fff;
-		text-decoration: none;
+	img {
+		width: 100%;
+		height: 250px;
+		background: #ccc;
+	}
+
+	h2 {
+		font-size: 1.25em;
+		margin: 0.5em 0 0.25em 0;
+	}
+
+	h3 {
+		font-size: 1em;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	a {
+		font-size: 0;
+		line-height: 0;
+
 		position: absolute;
+		top: 0;
+		left: 0;
 		bottom: 0;
 		right: 0;
-		left: 0;
-		padding: 0.25em 1em;
-		display: block;
-		-webkit-transition: 0.3s all ease;
-		transition: 0.3s all ease;
-		visibility: hidden;
-		opacity: 0;
 	}
 
 	&:hover {
-		span {
-			visibility: visible;
-			opacity: 1;
+		img {
+			outline: 5px solid $main-color;
 		}
 	}
 }
@@ -230,24 +265,8 @@ hr {
 	}
 }
 
-.testimonial{
-	&__quote { margin: 0; }
-	&__author{
-		text-align: right;
 
-		.title {
-			display: block;
-			font-style: oblique;
-			line-height: 1.35em;
-		}
-	}
-
-	&__image {
-		float: left;
-		margin-right: 1em;
-	}
-}
-
+// Footer
 .main-footer {
 	color: #fff;
 	text-align: center;
@@ -261,16 +280,18 @@ hr {
 }
 
 
+// Screen Breaks
 @media screen and (max-width : 650px) {
 	.main-header {
 		height: auto;
 
 		.logo {
 			display: block;
-			margin: 2em auto 1em;
+			margin: 1.5em 0 1em 1.5em;
 			top: auto;
 			left: auto;
-			width: 350px;
+			max-width: 350px;
+			width: 88%;
 
 			&__mark { display: none; }
 
@@ -288,58 +309,37 @@ hr {
 			bottom: auto;
 			left: auto;
 			right: auto;
-			padding: 0;
-			z-index: 8000;
 
-			&.fixed {
-				background: #000;
-				position: fixed;
-				top: 0;
-				left: 0;
-				bottom: auto;
-				width: 100%;
-				max-width: 100%;
+			&.fixed .menu {
+				background-image: url("../images/logo.svg");
+				background-size: 30% auto;
+				background-position: left -1em center;
 			}
+		}
+	}
+
+	.contact-information-bar {
+		font-size: 1.25em;
+
+		.email { display: none; }
+	}
+}
+
+@media screen and (max-width : 450px) {
+
+	.main-header {
+		.main-navigation.fixed .menu {
+			background-image: none;
 		}
 
 		.menu {
-			font-size: 1.1em;
-			margin: 0 auto;
-			padding: 0;
-			width: 100%;
-			max-width: 960px;
 			text-align: center;
-			background: none;
 
-			&__item {
-				list-style-type: none;
-				display: inline-block;
-				width: 33.33%;
-			}
-
-			&__link {
-				color: $main-color;
-				font-weight: bold;
-				text-transform: uppercase;
-				text-decoration: none;
-				padding: 1em 0;
-				display: block;
-
-				&.active { color: #666; }
-
-				&:hover {
-					background: $main-color;
-					color: #fff;
-				}
-			}
-		}
-
-		.contact-information {
-			font-size: 1.25em;
-
-			.email { display: none; }
+			&__item { width: 33.33%; }
+			&__link { padding: 1em 0; }
 		}
 	}
+
 }
 
 

@@ -31,11 +31,49 @@
 					</header>
 
 					<section class="picture-nav">
+
 						<div class="picture-box">
-							<img src="" alt="">
-							<h2></h2>
+							<img src="/images/bg.gif" alt="image">
+							<h2>Client Name</h2>
+							<h3 class="word-done">Thing 1 | Thing 2</h3>
+							<a href="#">See more</a>
+						</div><!--
+
+					 --><div class="picture-box">
+							<img src="/images/bg.gif" alt="image">
+							<h2>Client Name</h2>
+							<h3 class="word-done">Thing 1 | Thing 2 | Thing 3</h3>
+							<a href="#">See more</a>
+						</div><!--
+
+					 --><div class="picture-box">
+							<img src="/images/bg.gif" alt="image">
+							<h2>Client Name</h2>
+							<h3 class="word-done">Thing 1 | Thing 2 | Thing 3</h3>
+							<a href="#">See more</a>
+						</div><!--
+
+					 --><div class="picture-box">
+							<img src="/images/bg.gif" alt="image">
+							<h2>Client Name</h2>
+							<h3 class="word-done">Thing 1 | Thing 2</h3>
+							<a href="#">See more</a>
+						</div><!--
+
+					 --><div class="picture-box">
+							<img src="/images/bg.gif" alt="image">
+							<h2>Client Name</h2>
+							<h3 class="word-done">Thing 1 | Thing 2 | Thing 3</h3>
+							<a href="#">See more</a>
+						</div><!--
+
+					 --><div class="picture-box">
+							<img src="/images/bg.gif" alt="image">
+							<h2>Client Name</h2>
+							<h3 class="word-done">Thing 1 | Thing 2 | Thing 3</h3>
 							<a href="#">See more</a>
 						</div>
+
 					</section>
 
 				</div>
