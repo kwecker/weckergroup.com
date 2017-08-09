@@ -33,9 +33,9 @@
 			<!-- Main Navigation -->
 			<nav class="main-navigation group container">
 				<ul class="menu">
-					<li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
-					<li class="menu__item"><a href="#work" class="menu__link">Our Work</a></li>
-					<li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+					<li class="menu__item"><a href="#home" class="menu__link">Home</a></li><!--
+				 --><li class="menu__item"><a href="#work" class="menu__link">Our Work</a></li><!--
+				 --><li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
 				</ul>
 			</nav>
 
