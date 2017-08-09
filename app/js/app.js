@@ -62,7 +62,7 @@ $(document).ready(function() {
 	// Menu Button Action
 	$menu.find('a').click(function() {
 		var e = $(this).attr('href');
-		$('html,body').animate({scrollTop: ($(e).position().top - $menu.height() - 48)}, 500);
+		$('html,body').animate({scrollTop: ($(e).position().top - $menu.height() - 48)}, 400);
 
 		return false;
 	});
