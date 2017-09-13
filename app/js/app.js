@@ -2,48 +2,27 @@ $(document).ready(function() {
 	// Waypoints
 	var $home = $('#home'),
 		$work = $('#work'),
-		$about = $('#about');
+		$about = $('#about'),
+		sections = [$home, $work, $about];
 
 	function changeActive(id) {
 		$('.menu__link').removeClass('active');
 		$('.menu__link[href="#'+id+'"]').addClass('active');
 	}
 
-	$home.waypoint(function(direction) {
-		if (direction == 'down') {
-			changeActive('home');
-		}
-	}, { offset: '25%' });
+	sections.forEach(function(element) {
+		element.waypoint(function(direction) {
+			if (direction == 'down') {
+				changeActive(element.attr('id'));
+			}
+		}, { offset: '25%' });
 
-	$home.waypoint(function(direction) {
-		if (direction == 'up') {
-			changeActive('home');
-		}
-	}, { offset: '-25%' });
-
-	$work.waypoint(function(direction) {
-		if (direction == 'down') {
-			changeActive('work');
-		}
-	}, { offset: '25%' });
-
-	$work.waypoint(function(direction) {
-		if (direction == 'up') {
-			changeActive('work');
-		}
-	}, { offset: '-25%' });
-
-	$about.waypoint(function(direction) {
-		if (direction == 'down') {
-			changeActive('about');
-		}
-	}, { offset: '25%' });
-
-	$about.waypoint(function(direction) {
-		if (direction == 'up') {
-			changeActive('about');
-		}
-	}, { offset: '-25%' });
+		element.waypoint(function(direction) {
+			if (direction == 'up') {
+				changeActive(element.attr('id'));
+			}
+		}, { offset: '-25%' });
+	});
 
 	// Sticky navigation bar
 	var $menu = $(".main-navigation"),
@@ -62,7 +41,9 @@ $(document).ready(function() {
 	// Menu Button Action
 	$menu.find('a').click(function() {
 		var e = $(this).attr('href');
-		$('html,body').animate({scrollTop: ($(e).position().top - $menu.height() - 48)}, 400);
+		var pos = $(e).position().top - $menu.height() - 48;
+
+		$('html,body').animate({scrollTop: pos}, 400);
 
 		return false;
 	});

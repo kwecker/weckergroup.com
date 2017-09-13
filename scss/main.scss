@@ -2,6 +2,8 @@ $main-color: #c00;
 $font-color: #333;
 $accent-color: #fc0;
 
+$max-width: 1440px;
+
 
 // Base Styles
 body {
@@ -36,21 +38,21 @@ hr {
 // Wrappers
 .container {
 	width: 100%;
-	max-width: 1020px;
+	max-width: $max-width;
 	margin: 0 auto;
 
 	&--long { max-width: 2000px; }
 }
 
 .liner {
-	padding: 0 2em;
+	padding: 0 3em;
 }
 
 
 // Header
 .main-header {
 	width: 100%;
-	height: 15em;
+	height: 13em;
 	position: relative;
 	overflow: hidden;
 
@@ -60,7 +62,7 @@ hr {
 		position: relative;
 		display: inline-block;
 		margin: 0;
-		top: -2.9em;
+		top: -3.5em;
 		left: -2.9em;
 
 		&__mark {
@@ -93,11 +95,13 @@ hr {
 			bottom: auto;
 			width: 100%;
 			max-width: 100%;
+			border-top: 6px solid $main-color;
+			box-shadow: 0 0 15px rgba(0,0,0,0.5);
 
 			.menu {
 				background-image: url("../images/logotype.svg");
 				background-repeat: no-repeat;
-				background-size: auto 80%;
+				background-size: auto 70%;
 				background-position: left 1em center;
 				transition: background-image 0.1s ease-in-out;
 			}
@@ -109,7 +113,7 @@ hr {
 		margin: 0 auto;
 		padding: 0;
 		width: 100%;
-		max-width: 960px;
+		max-width: $max-width;
 		text-align: right;
 		background: none;
 
@@ -155,7 +159,30 @@ hr {
 
 	span {
 		display: inline-block;
-		margin: 0.7em 2em;
+		margin: 0.5em 2em 0.6em 2em;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			position: relative;
+			top: 3px;
+			margin-right: 8px;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+	.phone:before {
+		margin-right: 5px;
+		width: 15px;
+		background-image: url('../images/phone.svg');
+	}
+	.email:before {
+		height: 14px;
+		top: 2px;
+		background-image: url('../images/mail.svg');
 	}
 }
 
@@ -184,21 +211,21 @@ hr {
 	height: 35em;
 	margin: 3em 0;
 	background: #ccc;
+
+	+ hr { display: none; }
 }
 
-.picture-nav {
-	width: 100%;
-}
+.picture-nav { width: 100%; }
 
 .picture-box {
-	width: 47%;
-	margin-right: 6%;
+	width: 30%;
+	margin-right: 5%;
 	margin-top: 2em;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
 
-	&:nth-child(2n) { margin-right: 0; }
+	&:nth-child(3n) { margin-right: 0; }
 
 	img {
 		width: 100%;
@@ -235,21 +262,48 @@ hr {
 	}
 }
 
+.contact-venues, .location {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 3em 1em 0;
+	display: inline-block;
+
+	font-size: 1.25em;
+	line-height: 1.75em;
+}
+
+.contact-venues {
+	li:before {
+		content: '';
+		display: inline-block;
+		margin-right: 0.5em;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: 20px;
+		height: 20px;
+	}
+
+	.phone:before { background-image: url('../images/phone-black.svg'); }
+	.email:before { background-image: url('../images/mail-black.svg'); }
+	.fax:before { background-image: url('../images/fax-black.svg'); }
+}
+
 .team__member {
-	margin-bottom: 2em;
 	display: inline-block;
 	vertical-align: top;
 	width: (90%/4);
 	margin-right: (10%/3);
+	margin-top: 1em;
 
 	&:last-child { margin-right: 0; }
 
 	img {
 		display: block;
-		border-radius: 50%;
+		// border-radius: 50%;
 		width: 100%;
 		height: auto;
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
 	}
 
 	h3 {
@@ -262,6 +316,25 @@ hr {
 		margin: 0;
 		font-weight: normal;
 		font-style: oblique;
+	}
+
+	p {
+		line-height: 1.5em;
+	}
+}
+
+.clients {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0 0 1em 0;
+
+		columns: 4 250px;
+
+		li {
+			margin-top: 0.5em;
+			line-height: 1.25em;
+		}
 	}
 }
 
@@ -281,15 +354,43 @@ hr {
 
 
 // Screen Breaks
+@media screen and (max-width : 1024px) {
+	.picture-box {
+		width: 47%;
+
+		&:nth-child(3n) { margin-right: 5%; }
+		&:nth-child(2n) { margin-right: 0; }
+	}
+
+	.team__member {
+		width: (90%/2);
+		margin-right: 10%;
+
+		&:last-child { margin-right: auto; }
+		&:nth-child(2n) { margin-right: 0; }
+	}
+}
+
+@media screen and (max-width : 768px) {
+	.picture-box {
+		width: 100%;
+		margin-right: 0;
+
+		&:nth-child(3n) { margin-right: 0; }
+	}
+}
+
 @media screen and (max-width : 650px) {
+	.liner { padding: 0 2em; }
+
 	.main-header {
-		height: auto;
+		height: 13em;
 
 		.logo {
 			display: block;
 			margin: 1.5em 0 1em 1.5em;
-			top: auto;
-			left: auto;
+			top: 0.5em;
+			left: 0.5em;
 			max-width: 350px;
 			width: 88%;
 
@@ -323,11 +424,26 @@ hr {
 
 		.email { display: none; }
 	}
+
+	.main-content {
+		h1 { line-height: 1.3em; }
+	}
+
+	.team__member {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width : 450px) {
+	.liner { padding: 0 1em; }
 
 	.main-header {
+		.logo {
+			left: auto;
+			margin: 1.5em auto;
+		}
+
 		.main-navigation.fixed .menu {
 			background-image: none;
 		}
@@ -337,6 +453,21 @@ hr {
 
 			&__item { width: 33.33%; }
 			&__link { padding: 1em 0; }
+		}
+	}
+
+	.slider {
+		display: none;
+
+		+ hr { display: block; }
+	}
+
+	.main-content {
+		padding: 0.1em 0 1em 0;
+
+		.loud {
+			font-size: 1.25em;
+			line-height: 1.75em;
 		}
 	}
 
